@@ -1,0 +1,30 @@
+:root {
+  --purple  : #AA82FE;
+  --puple3: #7868E6;
+  --purple2 : #A079B0;
+  --blue    : #5C6AC4;
+  --menu    : #E8ECEF;
+  --text    : #444C59;
+  --bg-color: #F5F6F8;
+  --white   : #FFFFFF;
+}
+
+body {
+  margin : 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#dashboard {
+  width           : 100vw;
+  color           : var(--text);
+  font-family     : 'Roboto', sans-serif;
+  overflow        : hidden;
+}
+
+#root {
+  background-color: #F5F6F8;
+}
