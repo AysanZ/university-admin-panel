@@ -1,12 +1,12 @@
 :root {
-  --purple  : #AA82FE;
-  --puple3: #7868E6;
-  --purple2 : #A079B0;
-  --blue    : #5C6AC4;
-  --menu    : #E8ECEF;
-  --text    : #444C59;
-  --bg-color: #F5F6F8;
-  --white   : #FFFFFF;
+  --purple        : #AA82FE;
+  --blue          : #5A48CF;
+  --text          : #444C59;
+  --secondary-text: #858585;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
@@ -19,12 +19,27 @@ body {
 }
 
 #dashboard {
-  width           : 100vw;
-  color           : var(--text);
-  font-family     : 'Roboto', sans-serif;
-  overflow        : hidden;
+  color      : var(--text);
+  font-family: 'Poppins', sans-serif;
+  overflow   : hidden;
+  width      : 100vw;
 }
 
 #root {
-  background-color: #F5F6F8;
+  background-color: #F5F4F7;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  height: 5px;
+  width : 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  width           : 5px;
 }
