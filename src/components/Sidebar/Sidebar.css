@@ -1,7 +1,6 @@
 .container {
     align-items     : center;
-    background-color: white;
-    border-right    : .02px solid rgb(212, 212, 212);
+    background-color: #FAFAFA;
     display         : flex;
     flex-direction  : column;
     gap             : 7rem;
@@ -19,7 +18,7 @@
 }
 
 .menu {
-    background-color: #fff;
+    background-color: #FAFAFA;
     color           : var(--secondary-text);
     display         : flex;
     flex-direction  : column;

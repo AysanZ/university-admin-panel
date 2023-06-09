@@ -3,11 +3,9 @@ import { MdSpaceDashboard } from "react-icons/md";
 import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
 import { Link } from "react-router-dom";
 import { BsFillCalendarEventFill } from "react-icons/bs";
-import { NavLink } from "react-router-dom";
 import { HiAcademicCap } from "react-icons/hi";
 import { FaChalkboardTeacher, FaBookReader, FaBuilding } from "react-icons/fa";
-import { TbArtboard } from "react-icons/tb";
-import { useState } from "react";
+
 import "./Sidebar.css";
 
 const Side = () => {

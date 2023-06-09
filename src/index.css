@@ -1,6 +1,6 @@
 :root {
   --purple        : #AA82FE;
-  --blue          : #5A48CF;
+  --blue          : #6F6AF8;
   --text          : #444C59;
   --secondary-text: #858585;
 }
@@ -26,7 +26,7 @@ body {
 }
 
 #root {
-  background-color: #F5F4F7;
+  background-color: white;
 }
 
 /* scrollbar */
