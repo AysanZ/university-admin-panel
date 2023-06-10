@@ -1,5 +1,6 @@
 import React from "react";
 import Overview from "../components/Overview/Overview";
+import Report from "../components/Report/Report";
 import css from "./Dashboard.module.css";
 
 const Dashboard = () => {
@@ -36,9 +37,8 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <div className={css.overview}>
-        <Overview />
-      </div>
+      <Overview />
+      <Report />
     </div>
   );
 };

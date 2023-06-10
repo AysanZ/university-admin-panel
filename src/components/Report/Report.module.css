@@ -1,0 +1,137 @@
+.wrapper {
+    align-items    : center;
+    display        : flex;
+    justify-content: space-between;
+    padding        : 5rem 4rem;
+    width          : 100%;
+
+}
+
+.container {
+    align-items     : start;
+    background-color: var(--black);
+    border-radius   : 1.2rem;
+    display         : flex;
+    flex-direction  : column;
+    gap             : 3rem;
+    justify-content : center;
+    padding         : 2rem;
+    width           : 47.2%;
+}
+
+.header {
+    font-size  : 1.7rem;
+    font-weight: 500;
+}
+
+.table {
+    align-items    : center;
+    display        : flex;
+    flex-direction : column;
+    gap            : 2rem;
+    justify-content: space-between;
+    width          : 100%;
+}
+
+.title {
+    align-items     : center;
+    background-color: #222323;
+    border-radius   : 1rem;
+    display         : flex;
+    justify-content : space-between;
+    padding         : 1.5rem 1.5rem 1.5rem 3rem;
+    width           : 100%;
+}
+
+.title>div {
+    display        : flex;
+    justify-content: space-between;
+    width          : 40%;
+}
+
+.title>:nth-child(2) {
+    width: 28%;
+}
+
+.items {
+    align-items    : center;
+    display        : flex;
+    justify-content: space-between;
+    padding        : .5rem 1.2rem;
+    width          : 100%;
+}
+
+.items>div {
+    align-items    : start;
+    display        : flex;
+    flex-direction : column;
+    gap            : 44px;
+    justify-content: center;
+}
+
+.items>:nth-child(2) {
+    gap: 20px;
+}
+
+
+.item>img {
+    border-radius: 50%;
+    height       : 40px;
+    margin-right : 1.5rem;
+    width        : 40px;
+}
+
+.items>:nth-child(2)>.item {
+    align-items    : center;
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+}
+
+.wrapper>:nth-child(2) {
+    padding: 2rem 2rem 4rem 2rem;
+}
+
+.wrapper>:nth-child(2)>.header {
+    margin-bottom: 0.76rem;
+}
+
+.activity {
+    align-items    : center;
+    display        : flex;
+    font-size      : 1.4rem;
+    justify-content: space-between;
+    padding        : 1rem 1rem;
+    width          : 100%;
+}
+
+.activity>:nth-child(1) {
+    align-items    : center;
+    display        : flex;
+    gap            : 2.5rem;
+    justify-content: center;
+}
+
+.activity>:nth-child(1)>span {
+    align-items    : start;
+    display        : flex;
+    flex-direction : column;
+    gap            : 1rem;
+    justify-content: center;
+}
+
+.activity>:nth-child(1)>span>:nth-child(2) {
+    color    : var(--blue);
+    font-size: 1.2rem;
+}
+
+.activity>:nth-child(2) {
+    align-items     : center;
+    background-color: rgba(100, 89, 213, .3);
+    border-radius   : .5rem;
+    display         : flex;
+    font-size       : 1rem;
+    height          : 2.5rem;
+    justify-content : center;
+    width           : 9rem;
+}

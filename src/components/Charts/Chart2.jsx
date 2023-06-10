@@ -46,7 +46,7 @@ const StudentsNum = () => {
         type: "line",
         smooth: true,
         lineStyle: {
-          color: "black",
+          color: "#6F6AF8",
           width: 4,
         },
 
@@ -59,7 +59,7 @@ const StudentsNum = () => {
     ],
   };
 
-  return <ReactECharts option={option} style={{ height: "260px" }} />;
+  return <ReactECharts option={option} style={{ height: "300px" }} />;
 };
 
 export default StudentsNum;

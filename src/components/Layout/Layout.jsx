@@ -13,7 +13,7 @@ const Layout = () => {
 
   return (
     <div className={css.container}>
-      <Sidebar />
+      <Sidebar className={css.sidebar} />
 
       {pathname === "/" && <Navigate to="/dashboard" />}
 

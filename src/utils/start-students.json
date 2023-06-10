@@ -1,0 +1,37 @@
+[
+    {
+        "id": "PRE2209",
+        "img": "./avatar-02.jpg",
+        "name": " John Smith",
+        "mark": "1185",
+        "year": "2019"
+    },
+    {
+        "id": "PRE1245",
+        "img": "./avatar-01.jpg",
+        "name": " Jolie Hoskins",
+        "mark": "1195",
+        "year": "2018"
+    },
+    {
+        "id": "PRE1625",
+        "img": "./avatar-03.jpg",
+        "name": " Pennington Joy",
+        "mark": "1196",
+        "year": "2017"
+    },
+    {
+        "id": "PRE2516",
+        "img": "./avatar-04.jpg",
+        "name": " Millie Marsden",
+        "mark": "1187",
+        "year": "2016"
+    },
+    {
+        "id": "PRE2209",
+        "img": "./avatar-05.jpg",
+        "name": " Mark Smith",
+        "mark": "1185",
+        "year": "2015"
+    }
+]

@@ -47,7 +47,7 @@ const StatisticsChart = () => {
         type: "line",
         smooth: true,
         lineStyle: {
-          color: "black",
+          color: "#6F6AF8",
           width: 4,
         },
 
@@ -60,7 +60,7 @@ const StatisticsChart = () => {
     ],
   };
 
-  return <ReactECharts option={option} style={{ height: "260px" }} />;
+  return <ReactECharts option={option} style={{ height: "300px" }} />;
 };
 
 export default StatisticsChart;

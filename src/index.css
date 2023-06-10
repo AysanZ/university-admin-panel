@@ -1,7 +1,8 @@
 :root {
   --purple        : #AA82FE;
   --blue          : #6F6AF8;
-  --text          : #444C59;
+  --text          : #ffffff;
+  --black: #1A1E1F;
   --secondary-text: #858585;
 }
 
@@ -12,6 +13,8 @@ html {
 body {
   margin : 0;
   padding: 0;
+  overflow: hidden;
+
 }
 
 * {
@@ -19,11 +22,12 @@ body {
 }
 
 #dashboard {
-  background-color: #F5F4F7;
+  background-color: #070E0E;
   color           : var(--text);
   font-family     : 'Poppins', sans-serif;
-  overflow        : hidden;
   width           : 100vw;
+  
+  
 }
 
 /* scrollbar */

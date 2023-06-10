@@ -3,31 +3,31 @@
     display        : flex;
     flex-direction : column;
     justify-content: center;
-    margin-top     : 4rem;
     width          : 100%;
 }
 
 .statistics {
     align-items    : center;
     display        : flex;
-    gap            : 5rem;
     justify-content: space-between;
+    padding        : 5rem 6rem;
+    width          : 100%;
 }
 
 .static {
     align-items     : center;
-    background-color: white;
+    background-color: #1A1E1F;
     border-radius   : 1.2rem;
     color           : var(--text);
     display         : flex;
     height          : 10rem;
     justify-content : space-between;
     padding         : 1rem 2rem;
-    width           : 25rem;
+    width           : 22%;
 }
 
 .static>div {
-    color         : black;
+    color         : rgb(255, 255, 255);
     display       : flex;
     flex-direction: column;
     font-weight   : 500;
@@ -36,5 +36,5 @@
 
 .static>div>:nth-child(2) {
     color    : var(--blue);
-    font-size: 1.7rem;
+    font-size: 2rem;
 }

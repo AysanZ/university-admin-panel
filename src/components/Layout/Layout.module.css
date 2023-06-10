@@ -2,6 +2,7 @@
     color    : var(--text);
     display  : flex;
     font-size: 1.5rem;
+    width    : 100%;
 }
 
 .dashboard {
@@ -12,13 +13,11 @@
 
 .header {
     align-items     : center;
-    background-color: #ffffff;
-    border-bottom   : .2px solid rgb(221, 221, 221);
+    background-color: #1A1E1F;
     display         : flex;
     height          : 8rem;
     justify-content : space-between;
     padding         : 1rem 2rem;
-    width           : 100%;
 }
 
 .header>:nth-child(1) {
@@ -78,4 +77,11 @@
     color      : var(--blue);
     font-size  : 1.2rem;
     font-weight: 300;
+}
+
+.content {
+    height         : 100vh;
+    overflow-y     : scroll;
+    scrollbar-width: none;
+    width          : 100%;
 }

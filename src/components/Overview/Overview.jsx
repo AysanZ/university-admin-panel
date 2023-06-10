@@ -13,7 +13,7 @@ const Overview = () => {
           <div>
             <BsFillCircleFill size={10} style={{ color: "#6F6AF8" }} />
             <span>Teacher</span>
-            <BsFillCircleFill size={10} style={{ color: "#1C1C1C" }} />
+            <BsFillCircleFill size={10} style={{ color: "yellow" }} />
             <span>Student</span>
           </div>
         </div>
@@ -25,7 +25,7 @@ const Overview = () => {
           <div>
             <BsFillCircleFill size={10} style={{ color: "#6F6AF8" }} />
             <span>Teacher</span>
-            <BsFillCircleFill size={10} style={{ color: "#1C1C1C" }} />
+            <BsFillCircleFill size={10} style={{ color: "yellow" }} />
             <span>Student</span>
           </div>
         </div>
