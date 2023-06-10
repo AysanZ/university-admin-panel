@@ -1,6 +1,5 @@
 import React from "react";
 import Overview from "../components/Overview/Overview";
-import StudentsNum from "../components/StudentsNum/StudentsNum";
 import css from "./Dashboard.module.css";
 
 const Dashboard = () => {
