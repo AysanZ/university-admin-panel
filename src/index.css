@@ -19,14 +19,11 @@ body {
 }
 
 #dashboard {
-  color      : var(--text);
-  font-family: 'Poppins', sans-serif;
-  overflow   : hidden;
-  width      : 100vw;
-}
-
-#root {
-  background-color: white;
+  background-color: #F5F4F7;
+  color           : var(--text);
+  font-family     : 'Poppins', sans-serif;
+  overflow        : hidden;
+  width           : 100vw;
 }
 
 /* scrollbar */
@@ -40,6 +37,6 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
+  background-color: rgb(255, 255, 255);
   width           : 5px;
 }

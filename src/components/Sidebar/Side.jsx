@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { BsFillCalendarEventFill } from "react-icons/bs";
 import { HiAcademicCap } from "react-icons/hi";
 import { FaChalkboardTeacher, FaBookReader, FaBuilding } from "react-icons/fa";
-
 import "./Sidebar.css";
 
 const Side = () => {
@@ -50,7 +49,7 @@ const Side = () => {
             icon={<FaChalkboardTeacher size={25} />}
             label="Teachers"
           >
-            <MenuItem component={<Link to="teacher-list" />}>
+            <MenuItem className="item" component={<Link to="teacher-list" />}>
               {" "}
               Teacher List{" "}
             </MenuItem>

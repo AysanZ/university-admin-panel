@@ -7,7 +7,6 @@ import { Navigate, useLocation } from "react-router-dom/dist";
 import { BsFullscreen } from "react-icons/bs";
 import { BsChat } from "react-icons/bs";
 import { IoIosNotificationsOutline } from "react-icons/io";
-import { keyframes } from "@emotion/react";
 
 const Layout = () => {
   const { pathname } = useLocation();

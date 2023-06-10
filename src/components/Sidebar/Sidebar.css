@@ -1,6 +1,7 @@
 .container {
     align-items     : center;
-    background-color: #FAFAFA;
+    background-color: #ffffff;
+    border-right    : .2px solid rgb(221, 221, 221);
     display         : flex;
     flex-direction  : column;
     gap             : 7rem;
@@ -12,13 +13,25 @@
     width           : 28rem;
 }
 
+.logo {
+    background-color: #ffffff;
+    height          : 80px;
+    left            : 0;
+    position        : fixed;
+    top             : 0;
+    width           : 23.6rem;
+    z-index         : 99;
+}
+
 .logo>img {
+    left      : 5.5rem;
     margin-top: 3rem;
+    position  : fixed;
     width     : 12rem;
 }
 
 .menu {
-    background-color: #FAFAFA;
+    background-color: #ffffff;
     color           : var(--secondary-text);
     display         : flex;
     flex-direction  : column;
@@ -27,11 +40,13 @@
     font-weight     : 400;
     padding-left    : 1rem;
     padding-right   : 1rem;
+    padding-top     : 12rem;
     width           : 100%;
 }
 
 .item {
-    transition: all 300ms;
+    background-color: #ffffff;
+    transition      : all 300ms;
 }
 
 .item:hover {

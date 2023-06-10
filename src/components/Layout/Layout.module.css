@@ -1,7 +1,7 @@
 .container {
+    color    : var(--text);
     display  : flex;
     font-size: 1.5rem;
-    color    : var(--text);
 }
 
 .dashboard {
@@ -11,13 +11,14 @@
 }
 
 .header {
-    display         : flex;
     align-items     : center;
-    justify-content : space-between;
-    width           : 100%;
+    background-color: #ffffff;
+    border-bottom   : .2px solid rgb(221, 221, 221);
+    display         : flex;
     height          : 8rem;
+    justify-content : space-between;
     padding         : 1rem 2rem;
-    background-color: white;
+    width           : 100%;
 }
 
 .header>:nth-child(1) {
@@ -25,47 +26,48 @@
 }
 
 .right {
-    display: flex;
+    align-items    : center;
+    display        : flex;
+    gap            : 4rem;
     justify-content: center;
-    align-items: center;
-    gap: 4rem;
 }
 
 .icons {
     display: flex;
-    gap: 1.2rem;
+    gap    : 1.2rem;
 }
 
 .icon {
+    align-items     : center;
     background-color: rgba(111, 106, 248, 0.5);
-    width: 3.7rem;
-    height: 3.7rem;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;justify-content: center;
+    border-radius   : 50%;
+    display         : flex;
+    height          : 3.7rem;
+    justify-content : center;
+    width           : 3.7rem;
 }
 
 
 .profile {
-    display        : flex;
     align-items    : center;
-    justify-content: center;
+    display        : flex;
     gap            : 2rem;
+    justify-content: center;
 }
 
 .profile>img {
-    border-radius: 50%;
     border       : 2px solid #5A48CF;
+    border-radius: 50%;
     height       : 45px;
     width        : 45px;
 }
 
 .details {
+    align-items    : start;
     display        : flex;
     flex-direction : column;
-    align-items    : start;
-    justify-content: center;
     gap            : .7rem;
+    justify-content: center;
 }
 
 .details>:nth-child(1) {
@@ -73,7 +75,7 @@
 }
 
 .details>:nth-child(2) {
+    color      : var(--blue);
+    font-size  : 1.2rem;
     font-weight: 300;
-    font-size: 1.2rem;
-    color    : var(--blue);
 }
