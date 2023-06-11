@@ -1,7 +1,7 @@
 import React from "react";
-import Overview from "../components/Overview/Overview";
-import Report from "../components/Report/Report";
-import SocialMedia from '../components/SocialMedia/SocialMedia'
+import Overview from "../../components/Overview/Overview";
+import Report from "../../components/Report/Report";
+import SocialMedia from "../../components/SocialMedia/SocialMedia";
 import css from "./Dashboard.module.css";
 
 const Dashboard = () => {

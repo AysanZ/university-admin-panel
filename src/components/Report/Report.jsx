@@ -1,4 +1,4 @@
-import data from "../../utils/start-students.json";
+import data from "../../utils/star-students.json";
 import activity from "../../utils/student-activity.json";
 import css from "./Report.module.css";
 
