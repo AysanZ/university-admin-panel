@@ -1,7 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Dashboard from "./pages/Dashboard/Dashboard";
-import Student from './pages/StudentList/Student'
+import Student from "./pages/StudentList/Student";
+import StudentView from "./pages/StudentView/StudentView";
 
 const App = () => {
   return (
@@ -11,7 +12,7 @@ const App = () => {
           <Route path="/" element={<Layout />}>
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="student-list" element={<Student />} />
-
+            <Route path="student-view" element={<StudentView />} />
           </Route>
         </Routes>
       </BrowserRouter>
