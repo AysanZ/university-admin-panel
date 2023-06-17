@@ -1,0 +1,37 @@
+.wrapper {
+    margin-bottom: 70px;
+    padding      : 40px;
+    width        : 100%;
+}
+
+.container {
+    background-color: var(--black);
+    border-radius   : 10px;
+    padding         : 40px;
+    width           : 100%;
+}
+
+.container>:nth-child(1) {
+    font-size  : 20px;
+    font-weight: 500;
+}
+
+.form {
+    align-items    : center;
+    display        : flex;
+    flex-wrap      : wrap;
+    gap            : 40px;
+    justify-content: space-between;
+    padding        : 60px 40px 20px 40px;
+    width          : 100%;
+}
+
+.submit {
+    align-items    : start;
+    display        : flex;
+    flex-direction : column;
+    gap            : 40px;
+    justify-content: start;
+    padding        : 25px;
+    width          : 100%;
+}

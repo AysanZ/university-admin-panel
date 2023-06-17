@@ -30,7 +30,7 @@
 
 .menu {
     background-color: var(--black);
-    color           : #B6B9C3;
+    color           : var(--secondary-text);
     display         : flex;
     flex-direction  : column;
     font-family     : 'Poppins', sans-serif;

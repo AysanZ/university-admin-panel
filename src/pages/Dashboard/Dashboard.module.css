@@ -27,7 +27,7 @@
 }
 
 .static>div {
-    color         : rgb(255, 255, 255);
+    color         : var(--text);
     display       : flex;
     flex-direction: column;
     font-weight   : 500;

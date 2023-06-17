@@ -55,7 +55,7 @@
 }
 
 .profile>img {
-    border       : 2px solid #5A48CF;
+    border       : 2px solid var(--blue);
     border-radius: 50%;
     height       : 45px;
     width        : 45px;

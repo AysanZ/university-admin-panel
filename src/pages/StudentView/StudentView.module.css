@@ -101,7 +101,7 @@ p {
 }
 
 .item>:nth-child(2)>:nth-child(2) {
-    color      : white;
+    color      : var(--text);
     font-weight: 200;
 }
 

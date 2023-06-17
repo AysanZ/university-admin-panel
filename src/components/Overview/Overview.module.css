@@ -1,10 +1,10 @@
 .wrapper {
-    display: flex;
+    display        : flex;
     justify-content: space-between;
-    align-items: center;
-    gap    : 7px;
-    width: 100%;
-    padding: 0px 40px;
+    align-items    : center;
+    gap            : 7px;
+    width          : 100%;
+    padding        : 0px 40px;
 }
 
 .container {
@@ -16,7 +16,7 @@
     height          : 100%;
     margin-top      : 40px;
     padding         : 20px 20px;
-    width           : 50%;
+    width           : 47.2%;
 }
 
 .title {
@@ -31,9 +31,9 @@
 }
 
 .sidebar {
-position: fixed;
-top: 0;
-left: 0;
+    position: fixed;
+    top     : 0;
+    left    : 0;
 }
 
 .title {

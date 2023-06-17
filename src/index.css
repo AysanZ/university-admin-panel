@@ -1,16 +1,21 @@
 :root {
   --purple        : #AA82FE;
-  --blue          : #6F6AF8;
+  --blue          : #6656FE;
   --text          : #ffffff;
   --black         : #141414;
   --secondary-text: #858585;
   --bg            : #111111;
 }
 
+html {
+  font-size: 90%;
+}
+
 body {
-  margin  : 0;
-  padding : 0;
-  overflow: hidden;
+  margin          : 0;
+  padding         : 0;
+  overflow        : hidden;
+  background-color: var(--bg);
 }
 
 * {
@@ -18,10 +23,9 @@ body {
 }
 
 #dashboard {
-  background-color: var(--bg);
-  color           : var(--text);
-  font-family     : 'Poppins', sans-serif;
-  width           : 100vw;
+  color      : var(--text);
+  font-family: 'Poppins', sans-serif;
+  width      : 100vw;
 }
 
 /* scrollbar */
