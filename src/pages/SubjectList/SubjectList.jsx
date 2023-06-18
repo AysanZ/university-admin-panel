@@ -8,7 +8,7 @@ import { userData as initialData } from "../../data/departments";
 import css from "../StudentList/Student.module.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
-const DepartmentList = () => {
+const SubjectList = () => {
   const columns = useMemo(() => [
     {
       accessorKey: "id",
@@ -17,18 +17,6 @@ const DepartmentList = () => {
     {
       accessorKey: "name",
       header: "Name",
-    },
-    {
-      accessorKey: "hod",
-      header: "HOD",
-    },
-    {
-      accessorKey: "startedYear",
-      header: "Started Year",
-    },
-    {
-      accessorKey: "studentsNum",
-      header: "No Of Students",
     },
   ]);
   const theme = useMemo(() =>
@@ -83,4 +71,4 @@ const DepartmentList = () => {
   );
 };
 
-export default DepartmentList;
+export default SubjectList;
