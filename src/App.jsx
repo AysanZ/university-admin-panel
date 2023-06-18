@@ -9,6 +9,8 @@ import TeacherList from "./pages/TeacherList/TeacherList";
 import TeacherAdd from "./pages/TeacherAdd/TeacherAdd";
 import TeacherEdit from "./pages/TeacherEdit/TeacherEdit";
 import DepartmentList from "./pages/DepartmentList/DepartmentList";
+import DepartmentAdd from "./pages/DepartmentAdd/DepartmentAdd";
+
 
 const App = () => {
   return (
@@ -25,6 +27,8 @@ const App = () => {
             <Route path="teacher-add" element={<TeacherAdd />} />
             <Route path="teacher-edit" element={<TeacherEdit />} />
             <Route path="department-list" element={<DepartmentList />} />
+            <Route path="department-add" element={<DepartmentAdd />} />
+
           </Route>
         </Routes>
       </BrowserRouter>
