@@ -13,7 +13,7 @@ const Side = () => {
       <div className="logo">
         <img src="./Logo.png" alt="" />
       </div>
-      <Sidebar>
+      <Sidebar className="side">
         <Menu className="menu">
           <MenuItem
             className="item"

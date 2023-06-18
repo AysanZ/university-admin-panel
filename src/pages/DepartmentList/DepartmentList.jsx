@@ -4,50 +4,31 @@ import { Link } from "react-router-dom";
 import { Box, IconButton } from "@mui/material";
 import { MdDelete, MdEdit } from "react-icons/md";
 import { AiFillEye } from "react-icons/ai";
-import { userData as initialData } from "../../data/teachers";
+import { userData as initialData } from "../../data/departments";
 import css from "../StudentList/Student.module.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
-const TeacherList = () => {
+const DepartmentList = () => {
   const columns = useMemo(() => [
     {
       accessorKey: "id",
       header: "ID",
     },
     {
-      accessorKey: "name.firstName",
-      header: "First Name",
-
-      Cell: ({ renderedCellValue, row }) => (
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            gap: "10px",
-          }}
-        >
-          <img
-            alt="avatar"
-            height={35}
-            src={row.original.name.img}
-            loading="lazy"
-            style={{ borderRadius: "50%" }}
-          />
-          <span>{renderedCellValue}</span>
-        </Box>
-      ),
+      accessorKey: "name",
+      header: "Name",
     },
     {
-      accessorKey: "gender",
-      header: "Gender",
+      accessorKey: "hod",
+      header: "HOD",
     },
     {
-      accessorKey: "subject",
-      header: "Subject",
+      accessorKey: "startedYear",
+      header: "Started Year",
     },
     {
-      accessorKey: "mobileNumber",
-      header: "Mobile Number",
+      accessorKey: "studentsNum",
+      header: "No Of Students",
     },
   ]);
   const theme = useMemo(() =>
@@ -99,15 +80,6 @@ const TeacherList = () => {
               >
                 <MdEdit size={20} />
               </IconButton>
-              <IconButton
-                color="error"
-                onClick={() => {
-                  userData.splice(row.index, 1);
-                  setData([...userData]);
-                }}
-              >
-                <MdDelete size={20} />
-              </IconButton>
             </Box>
           )}
         />
@@ -116,4 +88,4 @@ const TeacherList = () => {
   );
 };
 
-export default TeacherList;
+export default DepartmentList;

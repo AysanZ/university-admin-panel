@@ -136,188 +136,181 @@ const StudentEdit = () => {
   return (
     <div className={css.wrapper}>
       <div className={css.container}>
-        <span className={css.header}>Student Information</span>
         <form action="" method="POST" className={css.form}>
-          <div className={css.textfield}>
-            <TextField
-              sx={theme}
-              type="text"
-              name="firstName"
-              value={formData.firstName}
-              onChange={handleChange}
-              required
-              label="First Name"
-              placeholder="Enter First Name"
-              variant="outlined"
-            />
-          </div>
-          <div className={css.textfield}>
-            <TextField
-              sx={theme}
-              type="text"
-              name="lastName"
-              value={formData.lastName}
-              onChange={handleChange}
-              required
-              label="Last Name"
-              placeholder="Enter Last Name"
-              variant="outlined"
-            />
-          </div>
+        <span className={css.header}>Student Information</span>
 
-          <div className={css.textField}>
-            <TextField
-              sx={theme}
-              name="gender"
-              value={formData.gender}
-              onChange={handleChange}
-              select
-              required
-              label="Gender"
-            >
-              {gender.map((option) => (
-                <MenuItem key={option.value} value={option.value}>
-                  {option.label}
-                </MenuItem>
-              ))}
-            </TextField>
-          </div>
-
-          <LocalizationProvider dateAdapter={AdapterDayjs}>
-            <DemoContainer components={["DateField"]}>
-              <DateField
-                required
+          <div className={css.section}>
+            <div className={css.textfield}>
+              <TextField
                 sx={theme}
-                name="dateOfBirth"
+                type="text"
+                name="firstName"
+                value={formData.firstName}
                 onChange={handleChange}
-                label="Date Of Birth"
+                required
+                label="First Name"
+                placeholder="Enter First Name"
+                variant="outlined"
               />
-            </DemoContainer>
-          </LocalizationProvider>
-
-          <div className={css.textfield}>
-            <TextField
-              sx={theme}
-              type="text"
-              name="roll"
-              value={formData.roll}
-              onChange={handleChange}
-              label="Roll"
-              placeholder="Enter Roll Number"
-              variant="outlined"
-            />
-          </div>
-
-          <div className={css.textField}>
-            <TextField
-              sx={theme}
-              name="bloodGroup"
-              value={formData.bloodGroup}
-              onChange={handleChange}
-              select
-              required
-              label="Blood Group"
-            >
-              {bloodGroup.map((option) => (
-                <MenuItem key={option.value} value={option.value}>
-                  {option.label}
-                </MenuItem>
-              ))}
-            </TextField>
-          </div>
-
-          <div className={css.textField}>
-            <TextField
-              sx={theme}
-              name="religion"
-              value={formData.religion}
-              onChange={handleChange}
-              select
-              required
-              label="Religion"
-            >
-              {religion.map((option) => (
-                <MenuItem key={option.value} value={option.value}>
-                  {option.label}
-                </MenuItem>
-              ))}
-            </TextField>
-          </div>
-
-          <div className={css.textfield}>
-            <TextField
-              sx={theme}
-              type="text"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
-              label="Email"
-              placeholder="Enter Email Address"
-              variant="outlined"
-            />
-          </div>
-
-          <div className={css.textField}>
-            <TextField
-              sx={theme}
-              name="discipline"
-              value={formData.discipline}
-              onChange={handleChange}
-              select
-              required
-              label="Discipline"
-            >
-              {discipline.map((option) => (
-                <MenuItem key={option.value} value={option.value}>
-                  {option.label}
-                </MenuItem>
-              ))}
-            </TextField>
-          </div>
-
-          <div className={css.textField}>
-            <TextField
-              sx={theme}
-              name="semester"
-              value={formData.semester}
-              onChange={handleChange}
-              select
-              required
-              label="Semester"
-            >
-              {semester.map((option) => (
-                <MenuItem key={option.value} value={option.value}>
-                  {option.label}
-                </MenuItem>
-              ))}
-            </TextField>
-          </div>
-
-          <div className={css.textfield}>
-            <TextField
-              sx={theme}
-              name="admissionId"
-              value={formData.admissionId}
-              onChange={handleChange}
-              type="text"
-              label="Admission ID"
-              placeholder="Enter Admission ID"
-              variant="outlined"
-            />
-          </div>
-
-          <div className={css.textfield}>
-            <TextField
-              sx={theme}
-              type="text"
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
-              label="Phone"
-              placeholder="Enter Phone Number"
-              variant="outlined"
-            />
+            </div>
+            <div className={css.textfield}>
+              <TextField
+                sx={theme}
+                type="text"
+                name="lastName"
+                value={formData.lastName}
+                onChange={handleChange}
+                required
+                label="Last Name"
+                placeholder="Enter Last Name"
+                variant="outlined"
+              />
+            </div>
+            <div className={css.textField}>
+              <TextField
+                sx={theme}
+                name="gender"
+                value={formData.gender}
+                onChange={handleChange}
+                select
+                required
+                label="Gender"
+              >
+                {gender.map((option) => (
+                  <MenuItem key={option.value} value={option.value}>
+                    {option.label}
+                  </MenuItem>
+                ))}
+              </TextField>
+            </div>
+            <LocalizationProvider dateAdapter={AdapterDayjs}>
+              <DemoContainer components={["DateField"]}>
+                <DateField
+                  required
+                  sx={theme}
+                  name="dateOfBirth"
+                  onChange={handleChange}
+                  label="Date Of Birth"
+                />
+              </DemoContainer>
+            </LocalizationProvider>
+            <div className={css.textfield}>
+              <TextField
+                sx={theme}
+                type="text"
+                name="roll"
+                value={formData.roll}
+                onChange={handleChange}
+                label="Roll"
+                placeholder="Enter Roll Number"
+                variant="outlined"
+              />
+            </div>
+            <div className={css.textField}>
+              <TextField
+                sx={theme}
+                name="bloodGroup"
+                value={formData.bloodGroup}
+                onChange={handleChange}
+                select
+                required
+                label="Blood Group"
+              >
+                {bloodGroup.map((option) => (
+                  <MenuItem key={option.value} value={option.value}>
+                    {option.label}
+                  </MenuItem>
+                ))}
+              </TextField>
+            </div>
+            <div className={css.textField}>
+              <TextField
+                sx={theme}
+                name="religion"
+                value={formData.religion}
+                onChange={handleChange}
+                select
+                required
+                label="Religion"
+              >
+                {religion.map((option) => (
+                  <MenuItem key={option.value} value={option.value}>
+                    {option.label}
+                  </MenuItem>
+                ))}
+              </TextField>
+            </div>
+            <div className={css.textfield}>
+              <TextField
+                sx={theme}
+                type="text"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                label="Email"
+                placeholder="Enter Email Address"
+                variant="outlined"
+              />
+            </div>
+            <div className={css.textField}>
+              <TextField
+                sx={theme}
+                name="discipline"
+                value={formData.discipline}
+                onChange={handleChange}
+                select
+                required
+                label="Discipline"
+              >
+                {discipline.map((option) => (
+                  <MenuItem key={option.value} value={option.value}>
+                    {option.label}
+                  </MenuItem>
+                ))}
+              </TextField>
+            </div>
+            <div className={css.textField}>
+              <TextField
+                sx={theme}
+                name="semester"
+                value={formData.semester}
+                onChange={handleChange}
+                select
+                required
+                label="Semester"
+              >
+                {semester.map((option) => (
+                  <MenuItem key={option.value} value={option.value}>
+                    {option.label}
+                  </MenuItem>
+                ))}
+              </TextField>
+            </div>
+            <div className={css.textfield}>
+              <TextField
+                sx={theme}
+                name="admissionId"
+                value={formData.admissionId}
+                onChange={handleChange}
+                type="text"
+                label="Admission ID"
+                placeholder="Enter Admission ID"
+                variant="outlined"
+              />
+            </div>
+            <div className={css.textfield}>
+              <TextField
+                sx={theme}
+                type="text"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                label="Phone"
+                placeholder="Enter Phone Number"
+                variant="outlined"
+              />
+            </div>
           </div>
 
           <div className={css.submit}>

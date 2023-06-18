@@ -103,7 +103,7 @@ const TeacherEdit = () => {
     <div className={css.wrapper}>
       <div className={css.container}>
         <form action="" method="POST" className={css.form}>
-          <div className={css.header}>Basic Details</div>
+          <span className={css.header}>Basic Details</span>
           <div className={css.section}>
             <div className={css.textfield}>
               <TextField

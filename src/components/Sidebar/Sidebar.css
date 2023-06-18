@@ -28,6 +28,10 @@
     width      : 120px;
 }
 
+.side {
+    width: 100%;
+}
+
 .menu {
     background-color: var(--black);
     color           : var(--secondary-text);

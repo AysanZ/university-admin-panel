@@ -5,9 +5,13 @@
     width    : 100%;
 }
 
+.sidebar {
+    width: 3%;
+}
+
 .dashboard {
     position: relative;
-    width   : 100%;
+    width   : 97%;
     z-index : 0;
 }
 
