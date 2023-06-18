@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 import { Box, IconButton } from "@mui/material";
 import { MdDelete, MdEdit } from "react-icons/md";
 import { AiFillEye } from "react-icons/ai";
-import { userData as initialData } from "../../data/students";
-import css from "./Student.module.css";
+import { userData as initialData } from "../../data/teachers";
+import css from "../StudentList/Student.module.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
-const Student = () => {
+const TeacherList = () => {
   const columns = useMemo(() => [
     {
       accessorKey: "id",
@@ -38,12 +38,12 @@ const Student = () => {
       ),
     },
     {
-      accessorKey: "class",
-      header: "Class",
+      accessorKey: "gender",
+      header: "Gender",
     },
     {
-      accessorKey: "parentName",
-      header: "Parent Name",
+      accessorKey: "subject",
+      header: "Subject",
     },
     {
       accessorKey: "mobileNumber",
@@ -56,7 +56,7 @@ const Student = () => {
         mode: "dark",
       },
       typography: {
-        fontSize: "16",
+        fontSize: "19",
       },
     })
   );
@@ -116,4 +116,4 @@ const Student = () => {
   );
 };
 
-export default Student;
+export default TeacherList;

@@ -31,7 +31,7 @@ const Side = () => {
               {" "}
               Student List{" "}
             </MenuItem>
-            <MenuItem className="item" component={<Link to="student-view" />}>
+            <MenuItem className="item" component={<Link to="view" />}>
               {" "}
               Student View{" "}
             </MenuItem>
@@ -53,7 +53,7 @@ const Side = () => {
               {" "}
               Teacher List{" "}
             </MenuItem>
-            <MenuItem className="item" component={<Link to="teacher-view" />}>
+            <MenuItem className="item" component={<Link to="view" />}>
               {" "}
               Teacher View{" "}
             </MenuItem>

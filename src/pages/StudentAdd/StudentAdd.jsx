@@ -134,7 +134,7 @@ const StudentAdd = () => {
   return (
     <div className={css.wrapper}>
       <div className={css.container}>
-        <span>Student Information</span>
+        <span className={css.header}>Student Information</span>
         <form action="" method="POST" className={css.form}>
           <div className={css.textfield}>
             <TextField

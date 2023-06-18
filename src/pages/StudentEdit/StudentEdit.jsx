@@ -48,7 +48,9 @@ const StudentEdit = () => {
       color: "white",
     },
 
-    "& .MuiInputLabel-root": { color: "var(--blue)" },
+    "& .MuiInputLabel-root": { color: "var(--blue)",
+
+  },
     "& .MuiOutlinedInput-root": {
       "& > fieldset": { borderColor: "#858585" },
     },
@@ -134,7 +136,7 @@ const StudentEdit = () => {
   return (
     <div className={css.wrapper}>
       <div className={css.container}>
-        <span>Student Information</span>
+        <span className={css.header}>Student Information</span>
         <form action="" method="POST" className={css.form}>
           <div className={css.textfield}>
             <TextField

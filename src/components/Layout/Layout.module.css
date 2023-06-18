@@ -38,7 +38,7 @@
 
 .icon {
     align-items     : center;
-    background-color: rgba(111, 106, 248, 0.5);
+    background-color: var(--back);
     border-radius   : 50%;
     display         : flex;
     height          : 37px;

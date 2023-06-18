@@ -11,7 +11,7 @@ const Overview = () => {
         <div className={css.header}>
           <span className={css.title}>Overview</span>
           <div>
-            <BsFillCircleFill size={10} style={{ color: "#6F6AF8" }} />
+            <BsFillCircleFill size={10} style={{ color: "var(--blue)" }} />
             <span>Teacher</span>
             <BsFillCircleFill size={10} style={{ color: "yellow" }} />
             <span>Student</span>
@@ -23,7 +23,7 @@ const Overview = () => {
         <div className={css.header}>
           <span className={css.title}>Overview</span>
           <div>
-            <BsFillCircleFill size={10} style={{ color: "#6F6AF8" }} />
+            <BsFillCircleFill size={10} style={{ color: "var(--blue)" }} />
             <span>Teacher</span>
             <BsFillCircleFill size={10} style={{ color: "yellow" }} />
             <span>Student</span>

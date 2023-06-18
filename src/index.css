@@ -1,14 +1,15 @@
 :root {
   --purple        : #AA82FE;
-  --blue          : #6656FE;
+  --blue          : #5586FF;
   --text          : #ffffff;
   --black         : #141414;
   --secondary-text: #858585;
   --bg            : #111111;
+  --back: rgba(85, 134, 255, 0.8)
 }
 
 html {
-  font-size: 90%;
+  font-size: 95%;
 }
 
 body {

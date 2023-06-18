@@ -2,10 +2,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import Student from "./pages/StudentList/Student";
-import StudentView from "./pages/StudentView/StudentView";
+import View from "./pages/View/View";
 import StudentAdd from "./pages/StudentAdd/StudentAdd";
 import StudentEdit from "./pages/StudentEdit/StudentEdit";
-
+import TeacherList from "./pages/TeacherList/TeacherList";
+import TeacherAdd from "./pages/TeacherAdd/TeacherAdd";
 
 const App = () => {
   return (
@@ -15,9 +16,11 @@ const App = () => {
           <Route path="/" element={<Layout />}>
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="student-list" element={<Student />} />
-            <Route path="student-view" element={<StudentView />} />
+            <Route path="view" element={<View />} />
             <Route path="student-add" element={<StudentAdd />} />
             <Route path="student-edit" element={<StudentEdit />} />
+            <Route path="teacher-list" element={<TeacherList />} />
+            <Route path="teacher-add" element={<TeacherAdd />} />
 
           </Route>
         </Routes>
