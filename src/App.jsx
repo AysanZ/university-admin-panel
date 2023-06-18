@@ -10,6 +10,8 @@ import TeacherAdd from "./pages/TeacherAdd/TeacherAdd";
 import TeacherEdit from "./pages/TeacherEdit/TeacherEdit";
 import DepartmentList from "./pages/DepartmentList/DepartmentList";
 import DepartmentAdd from "./pages/DepartmentAdd/DepartmentAdd";
+import DepartmentEdit from "./pages/DepartmentEdit/DepartmentEdit";
+
 
 
 const App = () => {
@@ -28,6 +30,7 @@ const App = () => {
             <Route path="teacher-edit" element={<TeacherEdit />} />
             <Route path="department-list" element={<DepartmentList />} />
             <Route path="department-add" element={<DepartmentAdd />} />
+            <Route path="department-edit" element={<DepartmentEdit />} />
 
           </Route>
         </Routes>

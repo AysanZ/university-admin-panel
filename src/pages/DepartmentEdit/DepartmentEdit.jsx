@@ -9,13 +9,13 @@ import Button from "@mui/material/Button";
 import { DateField } from "@mui/x-date-pickers/DateField";
 import css from "../StudentAdd/StudentAdd.module.css";
 
-const DepartmentAdd = () => {
+const DepartmentEdit = () => {
   const [formData, setFormData] = useState({
-    id: "",
-    name: "",
-    head: "",
+    id: "PRE1534",
+    name: "MCA",
+    head: "Lois A",
     startDate: "",
-    studentsNum: "",
+    studentsNum: "200",
   });
 
   function handleChange(event) {
@@ -145,4 +145,4 @@ const DepartmentAdd = () => {
   );
 };
 
-export default DepartmentAdd;
+export default DepartmentEdit;
