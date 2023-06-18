@@ -18,6 +18,14 @@ const SubjectList = () => {
       accessorKey: "name",
       header: "Name",
     },
+    {
+      accessorKey: "hod",
+      header: "Prerequisite",
+    },
+    {
+      accessorKey: "studentsNum",
+      header: "Credit",
+    },
   ]);
   const theme = useMemo(() =>
     createTheme({
