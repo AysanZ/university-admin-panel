@@ -29,20 +29,20 @@ const TeacherEdit = () => {
   };
 
   const [formData, setFormData] = useState({
-    id: "",
-    firstName: "",
-    lastName: "",
+    id: "PRE1234",
+    firstName: "Vincent",
+    lastName: "Green",
     gender: "",
-    mobile: "",
+    mobile: "077 3499 9959",
     dateOfBirth: "",
     joiningDate: "",
-    qualification: "",
-    experience: "",
-    username: "",
-    emailId: "",
-    password: "",
-    repeatPassword: "",
-    address: "",
+    qualification: "Bachelor of Engineering",
+    experience: "5",
+    username: "Vincent",
+    emailId: "vincent20@gmail.com",
+    password: "vincent20@gmail.com",
+    repeatPassword: "vincent20@gmail.com",
+    address: "3979 Ashwood Drive",
   });
 
   const [selectedImage, setSelectedImage] = useState(null);

@@ -7,6 +7,8 @@ import StudentAdd from "./pages/StudentAdd/StudentAdd";
 import StudentEdit from "./pages/StudentEdit/StudentEdit";
 import TeacherList from "./pages/TeacherList/TeacherList";
 import TeacherAdd from "./pages/TeacherAdd/TeacherAdd";
+import TeacherEdit from "./pages/TeacherEdit/TeacherEdit";
+
 
 const App = () => {
   return (
@@ -21,6 +23,8 @@ const App = () => {
             <Route path="student-edit" element={<StudentEdit />} />
             <Route path="teacher-list" element={<TeacherList />} />
             <Route path="teacher-add" element={<TeacherAdd />} />
+            <Route path="teacher-edit" element={<TeacherEdit />} />
+
 
           </Route>
         </Routes>
