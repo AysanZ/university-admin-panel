@@ -14,6 +14,7 @@
 .header {
     font-size  : 20px;
     font-weight: 500;
+    margin-top : 30px;
 }
 
 .form {
@@ -22,8 +23,21 @@
     flex-wrap      : wrap;
     gap            : 40px;
     justify-content: space-between;
-    padding        : 60px 40px 20px 40px;
+    padding        : 5px 40px 20px 40px;
     width          : 100%;
+}
+
+.section {
+    align-items    : center;
+    display        : flex;
+    flex-wrap      : wrap;
+    gap            : 40px;
+    justify-content: space-between;
+    width          : 100%;
+}
+
+.address {
+    width: 100%;
 }
 
 .submit {
