@@ -12,6 +12,8 @@ import DepartmentList from "./pages/DepartmentList/DepartmentList";
 import DepartmentAdd from "./pages/DepartmentAdd/DepartmentAdd";
 import DepartmentEdit from "./pages/DepartmentEdit/DepartmentEdit";
 import SubjectList from "./pages/SubjectList/SubjectList";
+import SubjectAdd from "./pages/SubjectAdd/SubjectAdd";
+
 
 
 
@@ -34,6 +36,8 @@ const App = () => {
             <Route path="department-add" element={<DepartmentAdd />} />
             <Route path="department-edit" element={<DepartmentEdit />} />
             <Route path="subject-list" element={<SubjectList />} />
+            <Route path="subject-add" element={<SubjectAdd />} />
+
 
 
           </Route>
