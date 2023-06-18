@@ -111,10 +111,10 @@ const Side = () => {
           <MenuItem
             className="item"
             icon={<BsFillCalendarEventFill size={25} />}
-            component={<Link to="events" />}
+            component={<Link to="calendar" />}
           >
             {" "}
-            Events
+            Calendar
           </MenuItem>
         </Menu>
       </Sidebar>

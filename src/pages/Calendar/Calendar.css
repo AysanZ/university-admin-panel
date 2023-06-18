@@ -1,0 +1,45 @@
+.calendar-container {
+    width        : 100%;
+    margin-bottom: 70px;
+    padding      : 30px;
+}
+
+.calendar-container>div {
+    width: 100%;
+}
+
+.fc-event {
+    background: #6656FE !important;
+    border-radius: 10px !important;
+    padding   : 12px !important;
+    font-size: 15px !important;
+    font-weight: 400;
+}
+
+.fc .fc-button-primary {
+    background-color: var(--blue) !important;
+    color: white;
+  }
+
+.fc table {
+    font-size  : 16px !important;
+    font-weight: 100 !important;
+}
+
+.fc .fc-timegrid-slot {
+    height: 70px !important;
+}
+
+.fc-day-today {
+    background-color: rgba(85, 134, 255, 0.2) !important;
+}
+
+.fc .fc-col-header-cell-cushion {
+    padding: 17px !important;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+td {
+    border: 0.2px solid var(--secondary-text) !important
+}

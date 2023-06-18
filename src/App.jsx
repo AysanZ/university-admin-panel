@@ -14,10 +14,7 @@ import DepartmentEdit from "./pages/DepartmentEdit/DepartmentEdit";
 import SubjectList from "./pages/SubjectList/SubjectList";
 import SubjectAdd from "./pages/SubjectAdd/SubjectAdd";
 import SubjectEdit from "./pages/SubjectEdit/SubjectEdit";
-
-
-
-
+import Calendar from "./pages/Calendar/Calendar";
 
 const App = () => {
   return (
@@ -39,10 +36,7 @@ const App = () => {
             <Route path="subject-list" element={<SubjectList />} />
             <Route path="subject-add" element={<SubjectAdd />} />
             <Route path="subject-edit" element={<SubjectEdit />} />
-
-
-
-
+            <Route path="calendar" element={<Calendar />} />
           </Route>
         </Routes>
       </BrowserRouter>
