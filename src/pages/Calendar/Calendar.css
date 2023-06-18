@@ -9,20 +9,20 @@
 }
 
 .fc-event {
-    background: #6656FE !important;
+    background   : #6656FE !important;
     border-radius: 10px !important;
-    padding   : 12px !important;
-    font-size: 15px !important;
-    font-weight: 400;
+    padding      : 12px !important;
+    font-size    : 14px !important;
+    font-weight  : 400;
 }
 
 .fc .fc-button-primary {
     background-color: var(--blue) !important;
-    color: white;
-  }
+    color           : white;
+}
 
 .fc table {
-    font-size  : 16px !important;
+    font-size  : 14px !important;
     font-weight: 100 !important;
 }
 
@@ -35,8 +35,8 @@
 }
 
 .fc .fc-col-header-cell-cushion {
-    padding: 17px !important;
-    font-size: 20px;
+    padding    : 17px !important;
+    font-size  : 17px;
     font-weight: 300;
 }
 
