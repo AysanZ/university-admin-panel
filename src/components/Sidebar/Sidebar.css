@@ -5,6 +5,7 @@
     flex-direction  : column;
     height          : 100vh;
     justify-content : start;
+    overflow-x      : hidden;
     overflow-y      : scroll;
     padding         : 0px 15px;
     scrollbar-width : none;
