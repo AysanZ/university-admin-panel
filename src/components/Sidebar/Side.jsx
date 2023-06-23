@@ -1,6 +1,6 @@
 import React from "react";
 import { MdSpaceDashboard } from "react-icons/md";
-import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
+import { Sidebar, Menu, MenuItem } from "react-pro-sidebar";
 import { Link } from "react-router-dom";
 import { BsFillCalendarEventFill } from "react-icons/bs";
 import { HiAcademicCap } from "react-icons/hi";
@@ -18,100 +18,46 @@ const Side = () => {
           <MenuItem
             className="item"
             icon={<MdSpaceDashboard size={25} />}
-            component={<Link to="dashboard" />}
+            component={<Link to="/dashboard" />}
           >
             Dashboard
           </MenuItem>
-          <SubMenu
+          <MenuItem
             className="item"
             icon={<HiAcademicCap size={25} />}
-            label="Students"
+            component={<Link to="/students" />}
           >
-            <MenuItem className="item" component={<Link to="student-list" />}>
-              {" "}
-              Student List{" "}
-            </MenuItem>
-            <MenuItem className="item" component={<Link to="view" />}>
-              {" "}
-              Student View{" "}
-            </MenuItem>
-            <MenuItem className="item" component={<Link to="student-add" />}>
-              {" "}
-              Student Add{" "}
-            </MenuItem>
-            <MenuItem className="item" component={<Link to="student-edit" />}>
-              {" "}
-              Student Edit{" "}
-            </MenuItem>
-          </SubMenu>
-          <SubMenu
+            Student
+          </MenuItem>
+
+          <MenuItem
             className="item"
             icon={<FaChalkboardTeacher size={25} />}
-            label="Teachers"
+            component={<Link to="/teachers" />}
           >
-            <MenuItem className="item" component={<Link to="teacher-list" />}>
-              {" "}
-              Teacher List{" "}
-            </MenuItem>
-            <MenuItem className="item" component={<Link to="view" />}>
-              {" "}
-              Teacher View{" "}
-            </MenuItem>
-            <MenuItem className="item" component={<Link to="teacher-add" />}>
-              {" "}
-              Teacher Add{" "}
-            </MenuItem>
-            <MenuItem className="item" component={<Link to="teacher-edit" />}>
-              {" "}
-              Teacher Edit{" "}
-            </MenuItem>
-          </SubMenu>
-          <SubMenu
+            Teacher
+          </MenuItem>
+
+          <MenuItem
             className="item"
             icon={<FaBuilding size={25} />}
-            label="Departments"
+            component={<Link to="/faculties" />}
           >
-            <MenuItem
-              className="item"
-              component={<Link to="department-list" />}
-            >
-              {" "}
-              Department List{" "}
-            </MenuItem>
-            <MenuItem className="item" component={<Link to="department-add" />}>
-              {" "}
-              Department Add{" "}
-            </MenuItem>
-            <MenuItem
-              className="item"
-              component={<Link to="department-edit" />}
-            >
-              {" "}
-              Department Edit{" "}
-            </MenuItem>
-          </SubMenu>
-          <SubMenu
+            Faculty
+          </MenuItem>
+
+          <MenuItem
             className="item"
             icon={<FaBookReader size={25} />}
-            label="Subjects"
+            component={<Link to="/subjects" />}
           >
-            <MenuItem className="item" component={<Link to="subject-list" />}>
-              {" "}
-              Subject List{" "}
-            </MenuItem>
-            <MenuItem className="item" component={<Link to="subject-add" />}>
-              {" "}
-              Subject Add{" "}
-            </MenuItem>
-            <MenuItem className="item" component={<Link to="subject-edit" />}>
-              {" "}
-              Subject Edit{" "}
-            </MenuItem>
-          </SubMenu>
+            Subject
+          </MenuItem>
+
           <MenuItem
             className="item"
             icon={<BsFillCalendarEventFill size={25} />}
-            component={<Link to="calendar" />}
+            component={<Link to="/calendar" />}
           >
             {" "}
             Calendar

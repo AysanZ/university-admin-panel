@@ -1,12 +1,6 @@
-import Box from "@mui/material/Box";
 import { useState } from "react";
 import TextField from "@mui/material/TextField";
-import MenuItem from "@mui/material/MenuItem";
-import { DemoContainer } from "@mui/x-date-pickers/internals/demo";
-import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
-import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import Button from "@mui/material/Button";
-import { DateField } from "@mui/x-date-pickers/DateField";
 import css from "../StudentAdd/StudentAdd.module.css";
 
 const SubjectAdd = () => {
@@ -58,7 +52,7 @@ const SubjectAdd = () => {
     <div className={css.wrapper}>
       <div className={css.container}>
         <form action="" method="POST" className={css.form}>
-          <span className={css.header}>Department Details</span>
+          <span className={css.header}>Subject Details</span>
           <div className={css.section}>
             <div className={css.textfield}>
               <TextField
@@ -68,7 +62,7 @@ const SubjectAdd = () => {
                 value={formData.id}
                 onChange={handleChange}
                 required
-                label="Department ID"
+                label="Subject ID"
                 variant="outlined"
               />
             </div>
@@ -80,7 +74,7 @@ const SubjectAdd = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                label="Department Name"
+                label="Subject Name"
                 variant="outlined"
               />
             </div>

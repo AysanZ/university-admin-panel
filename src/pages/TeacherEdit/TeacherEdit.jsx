@@ -14,9 +14,7 @@ import InputLabel from "@mui/material/InputLabel";
 import InputAdornment from "@mui/material/InputAdornment";
 import Visibility from "@mui/icons-material/Visibility";
 import FormControl from "@mui/material/FormControl";
-
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
-
 import css from "../StudentAdd/StudentAdd.module.css";
 
 const TeacherEdit = () => {

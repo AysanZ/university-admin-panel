@@ -10,7 +10,8 @@
 
 .item {
     align-items    : center;
-    border-radius  : 20px;
+    backdrop-filter: blur(50%);
+    border-radius  : 10px;
     display        : flex;
     height         : 90px;
     justify-content: space-between;

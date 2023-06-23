@@ -22,21 +22,21 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route path="dashboard" element={<Dashboard />} />
-            <Route path="student-list" element={<Student />} />
-            <Route path="view" element={<View />} />
-            <Route path="student-add" element={<StudentAdd />} />
-            <Route path="student-edit" element={<StudentEdit />} />
-            <Route path="teacher-list" element={<TeacherList />} />
-            <Route path="teacher-add" element={<TeacherAdd />} />
-            <Route path="teacher-edit" element={<TeacherEdit />} />
-            <Route path="department-list" element={<DepartmentList />} />
-            <Route path="department-add" element={<DepartmentAdd />} />
-            <Route path="department-edit" element={<DepartmentEdit />} />
-            <Route path="subject-list" element={<SubjectList />} />
-            <Route path="subject-add" element={<SubjectAdd />} />
-            <Route path="subject-edit" element={<SubjectEdit />} />
-            <Route path="calendar" element={<Calendar />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/students" element={<Student />} />
+            <Route path="/view" element={<View />} />
+            <Route path="/student-add" element={<StudentAdd />} />
+            <Route path="/student-edit" element={<StudentEdit />} />
+            <Route path="/teachers" element={<TeacherList />} />
+            <Route path="/teacher-add" element={<TeacherAdd />} />
+            <Route path="/teacher-edit" element={<TeacherEdit />} />
+            <Route path="/faculties" element={<DepartmentList />} />
+            <Route path="/faculty-add" element={<DepartmentAdd />} />
+            <Route path="/faculty-edit" element={<DepartmentEdit />} />
+            <Route path="/subjects" element={<SubjectList />} />
+            <Route path="/subject-add" element={<SubjectAdd />} />
+            <Route path="/subject-edit" element={<SubjectEdit />} />
+            <Route path="/calendar" element={<Calendar />} />
           </Route>
         </Routes>
       </BrowserRouter>

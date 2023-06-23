@@ -1,4 +1,3 @@
-import Box from "@mui/material/Box";
 import { useState } from "react";
 import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
@@ -48,9 +47,7 @@ const StudentEdit = () => {
       color: "white",
     },
 
-    "& .MuiInputLabel-root": { color: "var(--blue)",
-
-  },
+    "& .MuiInputLabel-root": { color: "var(--blue)" },
     "& .MuiOutlinedInput-root": {
       "& > fieldset": { borderColor: "#858585" },
     },
@@ -137,7 +134,7 @@ const StudentEdit = () => {
     <div className={css.wrapper}>
       <div className={css.container}>
         <form action="" method="POST" className={css.form}>
-        <span className={css.header}>Student Information</span>
+          <span className={css.header}>Student Information</span>
 
           <div className={css.section}>
             <div className={css.textfield}>

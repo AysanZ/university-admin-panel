@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
 import MaterialReactTable from "material-react-table";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Box, IconButton } from "@mui/material";
 import { MdDelete, MdEdit } from "react-icons/md";
 import { AiFillEye } from "react-icons/ai";
@@ -65,53 +65,60 @@ const Student = () => {
 
   return (
     <div className={css.container}>
-      <ThemeProvider theme={theme}>
-        <MaterialReactTable
-          muiTableHeadCellProps={{
-            sx: {
-              fontWeight: "700",
-              fontSize: "15px",
-              border: "none!important",
-            },
-          }}
-          muiTableBodyCellProps={{
-            sx: {
-              fontWeight: "300",
-              fontSize: "14px",
-              border: "none!important",
-            },
-          }}
-          columns={columns}
-          data={userData}
-          enableRowActions
-          renderRowActions={({ row, table }) => (
-            <Box sx={{ display: "flex", flexWrap: "nowrap", gap: "8px" }}>
-              <Link to="student-view">
-                <IconButton>
-                  <AiFillEye size={20} />
+      <NavLink to="/student-add">
+        <button className={css.btn}>Add</button>
+      </NavLink>
+      <div>
+        <ThemeProvider theme={theme}>
+          <MaterialReactTable
+            muiTableHeadCellProps={{
+              sx: {
+                fontWeight: "700",
+                fontSize: "15px",
+                border: "none!important",
+              },
+            }}
+            muiTableBodyCellProps={{
+              sx: {
+                fontWeight: "300",
+                fontSize: "14px",
+                border: "none!important",
+              },
+            }}
+            columns={columns}
+            data={userData}
+            enableRowActions
+            renderRowActions={({ row, table }) => (
+              <Box sx={{ display: "flex", flexWrap: "nowrap", gap: "8px" }}>
+                <NavLink to="/view">
+                  <IconButton>
+                    <AiFillEye size={20} />
+                  </IconButton>
+                </NavLink>
+                <NavLink to="/student-edit">
+                  <IconButton
+                    color="secondary"
+                    onClick={() => {
+                      table.setEditingRow(row);
+                    }}
+                  >
+                    <MdEdit size={20} />
+                  </IconButton>
+                </NavLink>
+                <IconButton
+                  color="error"
+                  onClick={() => {
+                    userData.splice(row.index, 1);
+                    setData([...userData]);
+                  }}
+                >
+                  <MdDelete size={20} />
                 </IconButton>
-              </Link>
-              <IconButton
-                color="secondary"
-                onClick={() => {
-                  table.setEditingRow(row);
-                }}
-              >
-                <MdEdit size={20} />
-              </IconButton>
-              <IconButton
-                color="error"
-                onClick={() => {
-                  userData.splice(row.index, 1);
-                  setData([...userData]);
-                }}
-              >
-                <MdDelete size={20} />
-              </IconButton>
-            </Box>
-          )}
-        />
-      </ThemeProvider>
+              </Box>
+            )}
+          />
+        </ThemeProvider>
+      </div>
     </div>
   );
 };
