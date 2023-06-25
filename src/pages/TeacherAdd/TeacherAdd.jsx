@@ -189,7 +189,7 @@ const TeacherEdit = () => {
                   sx={theme}
                   name="joiningDate"
                   onChange={handleChange}
-                  label="Date Of Birth"
+                  label="Joining Date"
                 />
               </DemoContainer>
             </LocalizationProvider>
