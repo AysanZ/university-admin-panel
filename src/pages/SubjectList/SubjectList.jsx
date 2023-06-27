@@ -3,7 +3,7 @@ import MaterialReactTable from "material-react-table";
 import { NavLink } from "react-router-dom";
 import { Box, IconButton } from "@mui/material";
 import { MdEdit } from "react-icons/md";
-import { userData as initialData } from "../../data/departments";
+import { userData as initialData } from "../../data/subjects";
 import css from "../StudentList/Student.module.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
@@ -18,11 +18,11 @@ const SubjectList = () => {
       header: "Name",
     },
     {
-      accessorKey: "hod",
+      accessorKey: "prerequisite",
       header: "Prerequisite",
     },
     {
-      accessorKey: "studentsNum",
+      accessorKey: "credit",
       header: "Credit",
     },
   ]);

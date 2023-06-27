@@ -15,7 +15,7 @@ const Student = () => {
       header: "ID",
     },
     {
-      accessorKey: "name.firstName",
+      accessorKey: "firstName",
       header: "First Name",
 
       Cell: ({ renderedCellValue, row }) => (
@@ -29,7 +29,7 @@ const Student = () => {
           <img
             alt="avatar"
             height={35}
-            src={row.original.name.img}
+            src="./avatar-01.jpg"
             loading="lazy"
             style={{ borderRadius: "50%" }}
           />
@@ -38,7 +38,7 @@ const Student = () => {
       ),
     },
     {
-      accessorKey: "class",
+      accessorKey: "semester",
       header: "Class",
     },
     {

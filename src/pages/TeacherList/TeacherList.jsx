@@ -15,7 +15,7 @@ const TeacherList = () => {
       header: "ID",
     },
     {
-      accessorKey: "name.firstName",
+      accessorKey: "firstName",
       header: "First Name",
 
       Cell: ({ renderedCellValue, row }) => (
@@ -29,7 +29,7 @@ const TeacherList = () => {
           <img
             alt="avatar"
             height={35}
-            src={row.original.name.img}
+            src="./avatar-01.jpg"
             loading="lazy"
             style={{ borderRadius: "50%" }}
           />

@@ -8,6 +8,7 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import Button from "@mui/material/Button";
 import { DateField } from "@mui/x-date-pickers/DateField";
 import css from "./StudentAdd.module.css";
+import axios from "axios";
 
 const StudentAdd = () => {
   const [formData, setFormData] = useState({
@@ -15,14 +16,12 @@ const StudentAdd = () => {
     lastName: "",
     gender: "",
     dateOfBirth: "",
-    roll: "",
     bloodGroup: "",
     religion: "",
     email: "",
-    discipline: "",
+    major: "",
     semester: "",
-    admissionId: "",
-    phone: "",
+    mobileNumber: "",
   });
 
   const [selectedImage, setSelectedImage] = useState(null);
@@ -39,7 +38,7 @@ const StudentAdd = () => {
 
   function handleSubmit(event) {
     event.preventDefault();
-    submitToApi(formData);
+    axios.post('http://localhost:8080/api/students/add', formData)
   }
 
   const theme = {
@@ -134,7 +133,7 @@ const StudentAdd = () => {
   return (
     <div className={css.wrapper}>
       <div className={css.container}>
-        <form action="" method="POST" className={css.form}>
+        <div className={css.form}>
           <span className={css.header}>Student Information</span>
           <div className={css.section}>
             <div className={css.textfield}>
@@ -144,7 +143,6 @@ const StudentAdd = () => {
                 name="firstName"
                 value={formData.firstName}
                 onChange={handleChange}
-                required
                 label="First Name"
                 placeholder="Enter First Name"
                 variant="outlined"
@@ -157,7 +155,7 @@ const StudentAdd = () => {
                 name="lastName"
                 value={formData.lastName}
                 onChange={handleChange}
-                required
+                
                 label="Last Name"
                 placeholder="Enter Last Name"
                 variant="outlined"
@@ -170,7 +168,7 @@ const StudentAdd = () => {
                 value={formData.gender}
                 onChange={handleChange}
                 select
-                required
+                
                 label="Gender"
               >
                 {gender.map((option) => (
@@ -183,7 +181,7 @@ const StudentAdd = () => {
             <LocalizationProvider dateAdapter={AdapterDayjs}>
               <DemoContainer components={["DateField"]}>
                 <DateField
-                  required
+                  
                   sx={theme}
                   name="dateOfBirth"
                   onChange={handleChange}
@@ -210,7 +208,7 @@ const StudentAdd = () => {
                 value={formData.bloodGroup}
                 onChange={handleChange}
                 select
-                required
+                
                 label="Blood Group"
               >
                 {bloodGroup.map((option) => (
@@ -227,7 +225,7 @@ const StudentAdd = () => {
                 value={formData.religion}
                 onChange={handleChange}
                 select
-                required
+                
                 label="Religion"
               >
                 {religion.map((option) => (
@@ -244,7 +242,7 @@ const StudentAdd = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                required
+                
                 label="Email"
                 placeholder="Enter Email Address"
                 variant="outlined"
@@ -253,11 +251,11 @@ const StudentAdd = () => {
             <div className={css.textField}>
               <TextField
                 sx={theme}
-                name="discipline"
+                name="major"
                 value={formData.discipline}
                 onChange={handleChange}
                 select
-                required
+                
                 label="Discipline"
               >
                 {discipline.map((option) => (
@@ -274,7 +272,7 @@ const StudentAdd = () => {
                 value={formData.semester}
                 onChange={handleChange}
                 select
-                required
+                
                 label="Semester"
               >
                 {semester.map((option) => (
@@ -300,7 +298,7 @@ const StudentAdd = () => {
               <TextField
                 sx={theme}
                 type="text"
-                name="phone"
+                name="mobileNumber"
                 value={formData.phone}
                 onChange={handleChange}
                 label="Phone"
@@ -356,13 +354,13 @@ const StudentAdd = () => {
                   backgroundColor: "var(--blue)",
                 },
               }}
-              onChange={handleSubmit}
+              onClick={handleSubmit}
               variant="contained"
             >
               Submit
             </Button>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   );

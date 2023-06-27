@@ -18,7 +18,7 @@ const DepartmentList = () => {
       header: "Name",
     },
     {
-      accessorKey: "hod",
+      accessorKey: "headOfDepartment",
       header: "HOD",
     },
     {
@@ -26,7 +26,7 @@ const DepartmentList = () => {
       header: "Started Year",
     },
     {
-      accessorKey: "studentsNum",
+      accessorKey: "numberOfStudents",
       header: "No Of Students",
     },
   ]);
