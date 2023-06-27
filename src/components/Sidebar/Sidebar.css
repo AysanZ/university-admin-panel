@@ -54,3 +54,7 @@
     background-color: var(--blue);
     color           : var(--blue);
 }
+
+.logOut {
+    margin-top: 270px;
+}

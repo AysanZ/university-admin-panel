@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { BsFillCalendarEventFill } from "react-icons/bs";
 import { HiAcademicCap } from "react-icons/hi";
 import { FaChalkboardTeacher, FaBookReader, FaBuilding } from "react-icons/fa";
+import {FiLogOut} from 'react-icons/fi'
 import "./Sidebar.css";
 
 const Side = () => {
@@ -61,6 +62,15 @@ const Side = () => {
           >
             {" "}
             Calendar
+          </MenuItem>
+
+          <MenuItem
+            className="item logOut"
+            icon={<FiLogOut size={25} />}
+            component={<Link to="/dashboard" />}
+          >
+            {" "}
+            Log Out
           </MenuItem>
         </Menu>
       </Sidebar>
