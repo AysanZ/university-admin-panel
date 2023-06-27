@@ -38,7 +38,7 @@ const StudentAdd = () => {
 
   function handleSubmit(event) {
     event.preventDefault();
-    axios.post('http://localhost:8080/api/students/add', formData)
+    axios.post('http://localhost:8081/api/students/add', formData)
   }
 
   const theme = {
@@ -194,7 +194,6 @@ const StudentAdd = () => {
                 sx={theme}
                 type="text"
                 name="roll"
-                value={formData.roll}
                 onChange={handleChange}
                 label="Roll"
                 placeholder="Enter Roll Number"
@@ -252,7 +251,7 @@ const StudentAdd = () => {
               <TextField
                 sx={theme}
                 name="major"
-                value={formData.discipline}
+                value={formData.major}
                 onChange={handleChange}
                 select
                 
@@ -286,7 +285,6 @@ const StudentAdd = () => {
               <TextField
                 sx={theme}
                 name="admissionId"
-                value={formData.admissionId}
                 onChange={handleChange}
                 type="text"
                 label="Admission ID"
@@ -299,7 +297,7 @@ const StudentAdd = () => {
                 sx={theme}
                 type="text"
                 name="mobileNumber"
-                value={formData.phone}
+                value={formData.mobileNumber}
                 onChange={handleChange}
                 label="Phone"
                 placeholder="Enter Phone Number"

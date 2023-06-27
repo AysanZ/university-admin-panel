@@ -12,7 +12,7 @@ const View = () => {
     <div className={css.wrapper}>
       <div className={css.container}>
         <div className={css.header}>
-          <img src="./avatar-03.jpg" alt="prof" />
+          <img src="./def.png" alt="prof" />
           <span>
             <span>Bruce Willis</span>
             <span>Computer Science</span>

@@ -5,6 +5,7 @@ import { Box, IconButton } from "@mui/material";
 import { MdDelete, MdEdit } from "react-icons/md";
 import { AiFillEye } from "react-icons/ai";
 import { userData as initialData } from "../../data/students";
+import { imgStudent } from "../../data/img";
 import css from "./Student.module.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 

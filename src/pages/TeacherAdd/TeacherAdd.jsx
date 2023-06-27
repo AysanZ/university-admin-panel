@@ -27,19 +27,12 @@ const TeacherEdit = () => {
   };
 
   const [formData, setFormData] = useState({
-    id: "",
     firstName: "",
     lastName: "",
     gender: "",
-    mobile: "",
+    mobileNumber: "",
     dateOfBirth: "",
-    joiningDate: "",
-    qualification: "",
-    experience: "",
-    username: "",
-    emailId: "",
-    password: "",
-    repeatPassword: "",
+    email: "",
     address: "",
   });
 
@@ -57,8 +50,7 @@ const TeacherEdit = () => {
 
   function handleSubmit(event) {
     event.preventDefault();
-    submitToApi(formData);
-  }
+    axios.post('http://localhost:8080/api/teachers/add', formData)  }
 
   const theme = {
     width: "320px",
@@ -108,7 +100,6 @@ const TeacherEdit = () => {
                 sx={theme}
                 type="text"
                 name="id"
-                value={formData.id}
                 onChange={handleChange}
                 required
                 label="Teacher ID"
@@ -175,7 +166,7 @@ const TeacherEdit = () => {
                 sx={theme}
                 type="text"
                 name="mobile"
-                value={formData.mobile}
+                value={formData.mobileNumber}
                 onChange={handleChange}
                 label="Mobile"
                 placeholder="Enter Mobile Number"
@@ -197,7 +188,6 @@ const TeacherEdit = () => {
               <TextField
                 sx={theme}
                 name="qualification"
-                value={formData.qualification}
                 onChange={handleChange}
                 required
                 label="Qualification"
@@ -207,7 +197,6 @@ const TeacherEdit = () => {
               <TextField
                 sx={theme}
                 name="experience"
-                value={formData.experience}
                 onChange={handleChange}
                 required
                 label="Experience"
@@ -222,7 +211,6 @@ const TeacherEdit = () => {
                 sx={theme}
                 type="text"
                 name="username"
-                value={formData.username}
                 onChange={handleChange}
                 required
                 label="Username"
@@ -235,7 +223,7 @@ const TeacherEdit = () => {
               <TextField
                 sx={theme}
                 name="emailId"
-                value={formData.emailId}
+                value={formData.email}
                 onChange={handleChange}
                 required
                 label="Email ID"
@@ -263,7 +251,6 @@ const TeacherEdit = () => {
                   </InputAdornment>
                 }
                 name="password"
-                value={formData.password}
                 onChange={handleChange}
                 label="Password"
               />
@@ -290,7 +277,6 @@ const TeacherEdit = () => {
                   </InputAdornment>
                 }
                 name="password"
-                value={formData.password}
                 onChange={handleChange}
                 label="Repeat Password"
               />
@@ -359,7 +345,7 @@ const TeacherEdit = () => {
                   backgroundColor: "var(--blue)",
                 },
               }}
-              onChange={handleSubmit}
+              onClick={handleSubmit}
               variant="contained"
             >
               Submit

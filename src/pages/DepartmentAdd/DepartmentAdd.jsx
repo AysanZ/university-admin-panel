@@ -11,9 +11,9 @@ const DepartmentAdd = () => {
   const [formData, setFormData] = useState({
     id: "",
     name: "",
-    head: "",
-    startDate: "",
-    studentsNum: "",
+    headOfDepartment: "",
+    startedYear: "",
+    numberOfStudents: "",
   });
 
   function handleChange(event) {
@@ -28,7 +28,7 @@ const DepartmentAdd = () => {
 
   function handleSubmit(event) {
     event.preventDefault();
-    submitToApi(formData);
+    axios.post('http://localhost:8080/api/department/add', formData)
   }
 
   const theme = {
@@ -87,7 +87,7 @@ const DepartmentAdd = () => {
               <TextField
                 sx={theme}
                 name="head"
-                value={formData.head}
+                value={formData.headOfDepartment}
                 onChange={handleChange}
                 required
                 label="Head of Department"
@@ -109,7 +109,7 @@ const DepartmentAdd = () => {
                 sx={theme}
                 type="text"
                 name="studentsNum"
-                value={formData.studentsNum}
+                value={formData.numberOfStudents}
                 onChange={handleChange}
                 label="No Of Students"
                 required
@@ -131,7 +131,7 @@ const DepartmentAdd = () => {
                   backgroundColor: "var(--blue)",
                 },
               }}
-              onChange={handleSubmit}
+              onClick={handleSubmit}
               variant="contained"
             >
               Submit

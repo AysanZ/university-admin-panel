@@ -13,8 +13,6 @@ const Overview = () => {
           <div>
             <BsFillCircleFill size={10} style={{ color: "var(--blue)" }} />
             <span>Teacher</span>
-            <BsFillCircleFill size={10} style={{ color: "yellow" }} />
-            <span>Student</span>
           </div>
         </div>
         <Chart1 />
@@ -24,8 +22,6 @@ const Overview = () => {
           <span className={css.title}>Overview</span>
           <div>
             <BsFillCircleFill size={10} style={{ color: "var(--blue)" }} />
-            <span>Teacher</span>
-            <BsFillCircleFill size={10} style={{ color: "yellow" }} />
             <span>Student</span>
           </div>
         </div>

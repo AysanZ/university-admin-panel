@@ -7,7 +7,7 @@ const SubjectAdd = () => {
   const [formData, setFormData] = useState({
     id: "",
     name: "",
-    prerequisite: "",
+    prerequisites: "",
     credit: "",
   });
 
@@ -23,7 +23,7 @@ const SubjectAdd = () => {
 
   function handleSubmit(event) {
     event.preventDefault();
-    submitToApi(formData);
+    axios.post('http://localhost:8080/api/subject/add', formData)
   }
 
   const theme = {
@@ -83,7 +83,7 @@ const SubjectAdd = () => {
                 sx={theme}
                 type="text"
                 name="prerequisite"
-                value={formData.prerequisite}
+                value={formData.prerequisites}
                 onChange={handleChange}
                 required
                 label="Prerequisite"
@@ -116,7 +116,7 @@ const SubjectAdd = () => {
                   backgroundColor: "var(--blue)",
                 },
               }}
-              onChange={handleSubmit}
+              onClick={handleSubmit}
               variant="contained"
             >
               Submit
