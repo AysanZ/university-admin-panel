@@ -23,7 +23,7 @@ const SubjectAdd = () => {
 
   function handleSubmit(event) {
     event.preventDefault();
-    axios.post('http://localhost:8080/api/subject/add', formData)
+    axios.post('http://localhost:8081/api/subject/add', formData)
   }
 
   const theme = {
@@ -51,7 +51,7 @@ const SubjectAdd = () => {
   return (
     <div className={css.wrapper}>
       <div className={css.container}>
-        <form action="" method="POST" className={css.form}>
+        <div className={css.form}>
           <span className={css.header}>Subject Details</span>
           <div className={css.section}>
             <div className={css.textfield}>
@@ -122,7 +122,7 @@ const SubjectAdd = () => {
               Submit
             </Button>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   );

@@ -28,7 +28,7 @@ const DepartmentAdd = () => {
 
   function handleSubmit(event) {
     event.preventDefault();
-    axios.post('http://localhost:8080/api/department/add', formData)
+    axios.post('http://localhost:8081/api/department/add', formData)
   }
 
   const theme = {
@@ -56,7 +56,7 @@ const DepartmentAdd = () => {
   return (
     <div className={css.wrapper}>
       <div className={css.container}>
-        <form action="" method="POST" className={css.form}>
+        <div className={css.form}>
           <span className={css.header}>Faculty Details</span>
           <div className={css.section}>
             <div className={css.textfield}>
@@ -137,7 +137,7 @@ const DepartmentAdd = () => {
               Submit
             </Button>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   );

@@ -50,7 +50,7 @@ const TeacherEdit = () => {
 
   function handleSubmit(event) {
     event.preventDefault();
-    axios.post('http://localhost:8080/api/teachers/add', formData)  }
+    axios.post('http://localhost:8081/api/teachers/add', formData)  }
 
   const theme = {
     width: "320px",
@@ -92,7 +92,7 @@ const TeacherEdit = () => {
   return (
     <div className={css.wrapper}>
       <div className={css.container}>
-        <form action="" method="POST" className={css.form}>
+        <div className={css.form}>
           <span className={css.header}>Basic Details</span>
           <div className={css.section}>
             <div className={css.textfield}>
@@ -351,7 +351,7 @@ const TeacherEdit = () => {
               Submit
             </Button>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   );
